@@ -3,17 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Weather Homerwork RD</title>
   </head>
+    <body><
+        <div class="weather-app">
   <header>
-    <form>
-      <input type="search" placeholder="Enter your City..." required />
+    <form class="search-form" id="search-form">
+      <input type="search" placeholder="Enter your City..." required  id="search-input"/>
       <input type="submit" value="search" />
     </form>
   </header>
 
   <main>
-    <div>
+  
       <h1>Caracas</h1>
       <p>
         Tuesday <strong>14:49,</strong> scattered clouds
@@ -36,5 +39,6 @@
       Hosted on Netlify
     </a>
   </footer>
-  <body></body>
+  <script src="src/index.js"></script>
+</body>
 </html>
