@@ -6,6 +6,7 @@ function refreshWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("time")
+  let date = new Date(response.data.time * 1000);
 
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
@@ -18,7 +19,7 @@ function refreshWeather(response) {
 function formatDate(date) {
     let minutes = date.getMinutes();
     let hours = date.getHours();
-    let days = [
+    let day = [
         "Sunday"
         "Monday"
         "Tuesday"
@@ -26,7 +27,7 @@ function formatDate(date) {
         "Thursday"
         "Friday"
         "Saturday"
-    ]
+ ] 
     let day = days[date.getDay()];
 
     if (minutes <10) {
