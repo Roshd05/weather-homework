@@ -26,8 +26,9 @@ function formatDate(date) {
         "Wednesday"
         "Thursday"
         "Friday"
-        "Saturday"
- ] 
+        "Saturday",
+ ] ;
+ 
     let day = days[date.getDay()];
 
     if (minutes <10) {
