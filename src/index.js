@@ -36,7 +36,7 @@ function formatDate(date) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-  
+
   return `${day} ${hours}:${minutes}`;
 }
 
@@ -56,4 +56,4 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Paris#");
+searchCity("Paris");
